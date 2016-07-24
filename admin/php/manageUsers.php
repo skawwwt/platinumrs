@@ -57,6 +57,7 @@ if($function == 1){
         echo "2";
     } else {
         //implement code to create team row in db if user is internal or admin
+
         //implement code to send email verification for new user to use to set password using pCode
         echo "1";
     }
