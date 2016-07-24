@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     });
 
-    $('#add').click(function() {
+    $('#addUserButton').click(function() {
         var firstname = $('#firstnameAdd').val(),
             surname = $('#surnameAdd').val(),
             email = $('#emailAdd').val(),
@@ -449,7 +449,7 @@ $(document).on("click", ".newsDel", function(){
 });
 
 $('.addNews').click(function(){
-  $('#newsAdd').modal("show");
+  $('#newsAddModal').modal("show");
 });
 
 $('#add').click(function(){
@@ -460,7 +460,7 @@ $('#add').click(function(){
   } else {
     $.post("php/manageNews.php", {do: 5, title: title, content: content}, function(response){
       if(response == "1"){
-        $('#newsAdd').modal("hide");
+        $('#newsAddModal').modal("hide");
         getNews();
       } else {
         alert("Issue adding news item, please try again.");

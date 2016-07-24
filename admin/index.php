@@ -224,7 +224,7 @@
         </div>
     </div>
     <!-- Modal addNews -->
-    <div id="newsAdd" class="modal fade" role="dialog">
+    <div id="newsAddModal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -355,7 +355,7 @@
                 <div class="modal-footer">
 
                     <button type="button" class="btn btn-default cancelAdd" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-success" id="add">Add</button>
+                    <button type="button" class="btn btn-success" id="addUserButton">Add</button>
                 </div>
             </div>
 
