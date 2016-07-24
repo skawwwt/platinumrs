@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteRule ^index$ index.php [NC]
+RewriteRule ^about$ about.php [NC]
+RewriteRule ^vacancies$ vacancies.php [NC]
+RewriteRule ^testimonials$ testimonials.php [NC]
+RewriteRule ^news$ news.php [NC]
+RewriteRule ^contact$ contact.php [NC]
+RewriteRule ^team$ team.php [NC]
+RewriteRule ^login$ login.php [NC]

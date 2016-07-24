@@ -1,0 +1,10 @@
+#draggablePanelList .panel-heading {
+       cursor: move;
+   }
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  background-color: #f6f6f6;
+  overflow:hidden;
+}
