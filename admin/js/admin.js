@@ -40,6 +40,13 @@ $(document).ready(function() {
                 if (!(response == "1")) {
                     alert("Error adding new user, please try again.");
                 } else {
+                  $.post("php/manageUsers.php", {do: 7, email: email, id: 0}, function(response){
+                    if(response == "1"){
+                      
+                    } else {
+                      alert("Error creating team profile for this user.");
+                    }
+                  });
                     $('#userAdd').modal("hide");
                     $('#firstnameAdd').val("");
                     $('#surnameAdd').val("");

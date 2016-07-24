@@ -63,6 +63,23 @@ if($function == 1){
     }
 
 
+} else if ($function == 7){
+  $email = $connection->real_escape_string($_POST['email']);
+  $sql = "SELECT id FROM members WHERE email ='$email' LIMIT 1";
+  $result = mysqli_query($connection, $sql);
+  if($result->num_rows > 0){
+    while ($row = $result->fetch_assoc()){
+      $uid = $row["id"];
+    }
+    $sql = "INSERT INTO team (uid, caption, phone, picture, published) VALUES ('$uid', '', '', 'default.jpg', '0')";
+    if(!(mysqli_query($connection, $sql))){
+      echo "2";
+    } else {
+      echo "1";
+    }
+  } else {
+    echo "2";
+  }
 } else {
     echo "2";
 }
@@ -74,5 +91,6 @@ function randomStr(){
 
     return $hex;
 }
+
 
 ?>
